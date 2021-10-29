@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  color: rgb(41, 39, 39);
+}
+
+body{
+font-family:'Montserrat', sans-serif;
+}
+/*----------------------------Contact-------------------------*/
+
+
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  background-color: gray ;
+
+
+}
+.navbar .leftside{
+
+   flex: 50%;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  color: red;
+}
+
+.navbar.leftside.links{
+  max-height: 80px;
+
+
+}
+.navbar.leftside .links .a{
+  text-decoration: none;
+  color:red;
+  font-size: 25px;
+  margin-left: 15px;
+
+}
+
+
+.navbar.right-side{
+  flex: 50%;
+}
+
+
+.navbar a:hover {
+  background-color:green;
+}
+
+.active_class {
+  color: black;
+  border-bottom: 1px solid red;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+h1{
+  text-align: center;
+}
+
+h2{
+
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+
+/*---------------------------------FOOTER-------------------*/
+footer{
+
+  padding: 10px 20px;
+  background-color: seagreen;
+  color: #fff;
+}
+
+footer h3{
+
+  color: #fff;
+
+}
+
+footer li{
+  list-style: none;
+  font-size:12px;
+  font-weight: lighter;
+  color: #fff;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+footer li:hover{
+
+  color: white;
+  color: var(--primary-color);
+}
+footer.main-hero-para{
+
+  margin: 0;
+}
+
+/*CONTACT US---------------------------------------*/
+
+.contactus-section {
+  margin: 15px 0;
+}
+
+.contact-input-feild {
+  margin-bottom: 2px;
+}
+
+
+
+
+/* Gallary start------------------------------------*/
+
+.gallary{
+
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+}
+
+.gallary .pics{
+
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.gallary .pics:hover{
+  filter: opacity(.8);
+}
+@media(max-width: 991px) {
+  .gallary{
+
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    
+  }
+
+  @media(max-width: 480px) {
+    .gallary{
+  
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-width: 100%;
+      -moz-column-width: 100%;
+  column-width: 100%;
+
+    }
+}
+}
+
+.state{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out ;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.state .open{
+visibility: visible;
+opacity: 1;
+transform: scale(1);
+
+
+}
+
+.state img{
+
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+
+.state .open svg{
+
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  background-color: rgba(0,0,0 , 0.4);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+  /* background-color: gray; */
+
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 270px;
+    margin: auto;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
